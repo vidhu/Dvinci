@@ -1,16 +1,24 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<!-- <div class="container">
-  <h1>Dvinci</h1>
-  <div class="row">
-      <div class="form">
-          <app-email></app-email>
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout-title">Title</span>
+  <nav class="mdl-navigation">
+    <a class="mdl-navigation__link" href="">Link</a>
+    <a class="mdl-navigation__link" href="">Link</a>
+    <a class="mdl-navigation__link" href="">Link</a>
+    <a class="mdl-navigation__link" href="">Link</a>
+  </nav>
+</div>
+<main class="">
+  <div class="page-content" style="height:90vh;">
+    <!--Main Grid layout-->
+    <div class="mdl-grid" style="height: 100%">
+      <div class="mdl-cell mdl-cell--8-col">
+          <div class="user-q mdl-shadow--2dp mdl-color--white content-padding">
+              <router-outlet></router-outlet>
           </div>
-        <div class="form"><app-proposal></app-proposal></div>
+      </div>
+      <div class="mdl-cell mdl-cell--4-col mdl-color--blue-grey-900 mdl-color-text--blue-grey-50 mdl-shadow--2dp">
+        <app-proposal></app-proposal>
+      </div>
+    </div>
   </div>
-</div> -->
-
-
-
-
-
-    
+</main>
