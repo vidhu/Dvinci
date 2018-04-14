@@ -47,6 +47,9 @@ import {
 import { EmailComponent } from './email/email.component';
 import { AddressComponent } from './address/address.component';
 import { FinancingComponent } from './financing/financing.component';
+import { FinancelistComponent } from './financelist/financelist.component';
+import { InstallerComponent } from './installer/installer.component';
+import { CreditcheckComponent } from './creditcheck/creditcheck.component';
 
 const appRoutes: Routes = [
   {
@@ -63,6 +66,12 @@ const appRoutes: Routes = [
   { 
     path: 'step-3', component: FinancingComponent
   },
+  { 
+    path: 'step-4', component: FinancelistComponent
+  },
+  { 
+    path: 'step-5', component: InstallerComponent
+  },
 ];
 
 @NgModule({
@@ -71,7 +80,10 @@ const appRoutes: Routes = [
     ProposalComponent,
     EmailComponent,
     AddressComponent,
-    FinancingComponent
+    FinancingComponent,
+    FinancelistComponent,
+    InstallerComponent,
+    CreditcheckComponent
   ],
   imports: [
     BrowserModule,
