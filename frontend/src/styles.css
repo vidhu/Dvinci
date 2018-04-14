@@ -27,3 +27,7 @@
 .mdl-textfield, .mdl-textfield__input, .mdl-textfield__label {
   font-size: 30px;
 }
+
+.mdl-textfield {
+  width: 100%;
+}

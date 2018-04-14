@@ -45,14 +45,23 @@ import {
   MatTooltipModule,
 } from '@angular/material';
 import { EmailComponent } from './email/email.component';
+import { AddressComponent } from './address/address.component';
+import { FinancingComponent } from './financing/financing.component';
 
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'step-1',
+    redirectTo: 'step-2',
     pathMatch: 'full'
-  }, { 
-    path: 'step-1', component: EmailComponent
+  },
+  { 
+    path: 'step-1', component: AddressComponent
+  }, 
+  { 
+    path: 'step-2', component: EmailComponent
+  },
+  { 
+    path: 'step-3', component: FinancingComponent
   },
 ];
 
@@ -60,7 +69,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     ProposalComponent,
-    EmailComponent
+    EmailComponent,
+    AddressComponent,
+    FinancingComponent
   ],
   imports: [
     BrowserModule,
