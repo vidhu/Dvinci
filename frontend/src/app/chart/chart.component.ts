@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-proposal',
-  templateUrl: './proposal.component.html',
-  styleUrls: ['./proposal.component.css']
+  selector: 'app-chart',
+  templateUrl: './chart.component.html',
+  styleUrls: ['./chart.component.css']
 })
-export class ProposalComponent implements OnInit {
+export class ChartComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
     var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var ctx = document.getElementById("myChart").getContext('2d');
+    var ctx = document.getElementById("myChart2").getContext('2d');
     var myChart = new Chart(ctx, {
       type: 'line',
       data: {
@@ -50,5 +50,4 @@ export class ProposalComponent implements OnInit {
       }
     });
   }
-
 }

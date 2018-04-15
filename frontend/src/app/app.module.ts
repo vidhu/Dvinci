@@ -52,6 +52,7 @@ import { InstallerComponent } from './installer/installer.component';
 import { CreditcheckComponent } from './creditcheck/creditcheck.component';
 import { SuccessComponent } from './success/success.component';
 import { CalenderComponent } from './calender/calender.component';
+import { ChartComponent } from './chart/chart.component';
 
 const appRoutes: Routes = [
   {
@@ -93,7 +94,8 @@ const appRoutes: Routes = [
     InstallerComponent,
     CreditcheckComponent,
     SuccessComponent,
-    CalenderComponent
+    CalenderComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
