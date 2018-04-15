@@ -50,6 +50,8 @@ import { FinancingComponent } from './financing/financing.component';
 import { FinancelistComponent } from './financelist/financelist.component';
 import { InstallerComponent } from './installer/installer.component';
 import { CreditcheckComponent } from './creditcheck/creditcheck.component';
+import { SuccessComponent } from './success/success.component';
+import { CalenderComponent } from './calender/calender.component';
 
 const appRoutes: Routes = [
   {
@@ -72,6 +74,12 @@ const appRoutes: Routes = [
   { 
     path: 'step-5', component: InstallerComponent
   },
+  { 
+    path: 'step-6', component: CalenderComponent
+  },
+  { 
+    path: 'step-7', component: SuccessComponent
+  }
 ];
 
 @NgModule({
@@ -83,7 +91,9 @@ const appRoutes: Routes = [
     FinancingComponent,
     FinancelistComponent,
     InstallerComponent,
-    CreditcheckComponent
+    CreditcheckComponent,
+    SuccessComponent,
+    CalenderComponent
   ],
   imports: [
     BrowserModule,
